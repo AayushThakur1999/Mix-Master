@@ -1,12 +1,14 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 const HomeLayout = () => {
+  const navigation = useNavigation();
+  const isPageLoading = navigation.state === 'loading';
   return (
-    <main className="w-full h-screen bg-stone-200">
+    <main className="w-full min-h-screen bg-stone-200">
       <Navbar />
       <section className="w-4/5 lg:w-3/4 mx-auto py-20">
-        <Outlet />
+        {isPageLoading ? <div className="w-24 h-24 animate-spin [animation-duration:500ms] border-4 border-gray-400 border-t-rose-700 rounded-full"></div>: <Outlet />}
       </section>
     </main>
   );

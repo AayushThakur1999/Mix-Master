@@ -5,8 +5,8 @@ const Navbar = () => {
     `pt-4 sm:pt-0 sm:px-4 md:text-lg ${isActive ? "text-green-600" : "hover:text-emerald-500"}`;
 
   return (
-    <nav className="w-full bg-blue-50 shadow-md">
-      <div className="w-4/5 lg:w-3/4 mx-auto py-6 flex flex-col sm:flex-row justify-between items-start sm:items-center">
+    <nav className="w-full bg-stone-50 shadow-md sticky top-0 z-10">
+      <div className="w-4/5 lg:w-3/4 mx-auto py-5 flex flex-col sm:flex-row justify-between items-start sm:items-center">
         <h1 className="text-4xl md:text-5xl font-bold text-emerald-500">
           MixMaster
         </h1>
