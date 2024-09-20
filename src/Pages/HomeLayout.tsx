@@ -8,7 +8,7 @@ const HomeLayout = () => {
     <main className="w-full min-h-screen bg-stone-200">
       <Navbar />
       <section className="w-4/5 lg:w-3/4 mx-auto py-20">
-        {isPageLoading ? <div className="w-24 h-24 animate-spin [animation-duration:500ms] border-4 border-gray-400 border-t-rose-700 rounded-full"></div>: <Outlet />}
+        {isPageLoading ? <div className="w-24 h-24 animate-spin [animation-duration:500ms] border-8 border-gray-400 border-t-rose-700 rounded-full" />: <Outlet />}
       </section>
     </main>
   );
