@@ -3,7 +3,7 @@ import { CocktailCardProps } from "../types/types";
 
 const CocktailCard = ({ id, name, image, info, glass }: CocktailCardProps) => {
   return (
-    <div className="flex flex-col shadow-md hover:-translate-y-1 z-0 hover:shadow-xl transition duration-300">
+    <div className="flex flex-col shadow-md hover:-translate-y-1 hover:shadow-xl transition duration-300">
       <img src={image} alt={name} className="bg-cover bg-center rounded-t-md h-64" />
       <div className="p-4">
       <h2 className="text-3xl font-bold">{name}</h2>
