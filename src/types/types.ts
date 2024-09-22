@@ -17,7 +17,7 @@ export type Drink = {
   // where we can give any number value at the place of number
 };
 
-export type LoaderData = {
+export type LandingLoaderData = {
   drinks: Drink[] | null;
   searchTerm: string;
 };
