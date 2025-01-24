@@ -5,6 +5,6 @@ const SinglePageError = () => {
   const error = useRouteError() as RouterError;
   console.log(error.message);
 
-  return <h2 className="text-2xl font-medium">{error.message}</h2>;
+  return <h2 className="text-4xl font-mono">There was an error...</h2>;
 };
 export default SinglePageError;

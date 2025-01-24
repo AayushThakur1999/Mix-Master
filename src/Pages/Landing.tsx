@@ -11,6 +11,7 @@ const searchCocktailQuery = (searchTerm: string) => {
   return {
     queryKey: ["search", searchTerm || "all"],
     queryFn: async () => {
+      searchTerm = searchTerm || "d";
       const response = await axios.get(`${cocktailSearchUrl}${searchTerm}`);
       return response.data.drinks;
     },
